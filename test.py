@@ -49,9 +49,9 @@ if st.session_state['page'] == 'main':
             st.rerun()
 
     with st.container(border=True):
-    st.markdown("### 📐 수학")
-    st.caption("최근 업데이트: 중간고사 대비 통합본")
-    st.link_button("자료 열기 ↗", "https://docs.google.com/...", use_container_width=True)
+        st.markdown("### 📐 수학")
+        st.caption("최근 업데이트: 중간고사 대비 통합본")
+        st.link_button("자료 열기 ↗", "https://docs.google.com/...", use_container_width=True)
 
 # --------------------------------------------------
 # PAGE 2: 익명 건의함 화면
