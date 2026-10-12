@@ -15,6 +15,10 @@ if st.session_state['page'] == 'main':
     tab1, tab2, tab3 = st.tabs(["수학", "물리", "생명과학"])
     with tab1:
         st.link_button("수학 필기 모음_HS", "https://docs.google.com/...")
+        with st.container(border=True):
+            st.markdown("### 📐 수학")
+            st.caption("최근 업데이트: 중간고사 대비 통합본")
+            st.link_button("자료 열기 ↗", "https://docs.google.com/...", use_container_width=True)
     with tab3:
         st.link_button("생물의 유전 '조건 X' 문제", "https://docs.google.com/...")
 
@@ -47,11 +51,6 @@ if st.session_state['page'] == 'main':
         if st.button("💬 익명 건의함으로 이동"):
             st.session_state['page'] = 'suggestion'
             st.rerun()
-
-    with st.container(border=True):
-        st.markdown("### 📐 수학")
-        st.caption("최근 업데이트: 중간고사 대비 통합본")
-        st.link_button("자료 열기 ↗", "https://docs.google.com/...", use_container_width=True)
 
 # --------------------------------------------------
 # PAGE 2: 익명 건의함 화면
